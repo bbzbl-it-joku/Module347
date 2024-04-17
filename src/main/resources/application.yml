@@ -2,13 +2,3 @@ server.port: 9090
 spring:
   application:
     name: flugbuchungsapi
-  jpa:
-    show-sql: true
-    generate-ddl: true
-    hibernate:
-      ddl-auto: update
-  datasource:
-    url: jdbc:postgresql://aws-0-eu-central-1.pooler.supabase.com:5432/postgres
-    username: postgres.rfnylnlerllgtrlrrjrf
-    password: [MY_PASSWORD]
-    driverClassName: org.postgresql.Driver

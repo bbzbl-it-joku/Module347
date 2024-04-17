@@ -2,10 +2,8 @@ package dev.joku.m347.devcontainer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EnableJpaRepositories
 public class DevcontainerApplication {
 
 	public static void main(String[] args) {
