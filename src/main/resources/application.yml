@@ -1,4 +1,14 @@
 server.port: 9090
 spring:
   application:
-    name: flugbuchungsapi
+    name: devcontainer
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://db:5432/mydb
+    username: postgres
+    password: postgres
+    driverClassName: org.postgresql.Driver
