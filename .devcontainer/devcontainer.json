@@ -7,6 +7,7 @@
     },
     "extensions": [
         "redhat.java",
+        "redhat.fabric8-analytics",
         "vscjava.vscode-java-pack",
         "vscjava.vscode-maven"
     ],
