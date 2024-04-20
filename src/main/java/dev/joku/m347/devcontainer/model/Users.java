@@ -10,13 +10,23 @@ import lombok.Data;
 @Data
 @Entity
 public class Users {
-    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, unique = true)
-    private Long id;
+    private long id;
 
     @Column(nullable = false, unique = true)
     private String userName;
-    
+
+    public Users() {
+    }
+
+    public Users(String userName) {
+        this.userName = userName;
+    }
+
+    public Users(long id, String userName) {
+        this.id = id;
+        this.userName = userName;
+    }
 }
