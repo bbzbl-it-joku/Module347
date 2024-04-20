@@ -2,7 +2,6 @@ package dev.joku.m347.devcontainer;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.autoconfigure.security.SecurityProperties.User;
 import org.springframework.stereotype.Component;
 
 import dev.joku.m347.devcontainer.model.Post;
@@ -11,7 +10,6 @@ import dev.joku.m347.devcontainer.repository.PostRepository;
 import dev.joku.m347.devcontainer.repository.UserRepository;
 
 import java.sql.Timestamp;
-import java.time.LocalDateTime;
 
 @Component
 public class DataLoader implements CommandLineRunner {

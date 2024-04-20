@@ -9,11 +9,11 @@ services:
     depends_on:
       - db
     command: ["java", "-jar", "target/devcontainer-0.0.1-SNAPSHOT.jar"]
-
-    #environment:
-      #SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/mydb
-      #SPRING_DATASOURCE_USERNAME: postgres
-      #SPRING_DATASOURCE_PASSWORD: postgres
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/mydb
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: postgres
+      SPRING_DATASOURCE_DRIVERCLASSNAME: org.postgresql.Driver
 
   db:
     image: postgres:latest

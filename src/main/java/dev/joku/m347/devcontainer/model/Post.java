@@ -1,9 +1,6 @@
 package dev.joku.m347.devcontainer.model;
 
 import java.sql.Timestamp;
-import java.time.LocalDateTime;
-
-import org.springframework.context.annotation.Primary;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
