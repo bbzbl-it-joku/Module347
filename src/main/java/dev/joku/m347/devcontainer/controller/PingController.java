@@ -1,4 +1,4 @@
-package dev.joku.m347.devcontainer;
+package dev.joku.m347.devcontainer.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
