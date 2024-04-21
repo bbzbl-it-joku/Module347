@@ -1,0 +1,21 @@
+{
+    "name": "Java Spring Boot Dev Container",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "app",
+    "settings": {
+        "java.home": "/usr/local/openjdk-21"
+    },
+    "extensions": [
+        "redhat.java",
+        "redhat.fabric8-analytics",
+        "vscjava.vscode-java-pack",
+        "vscjava.vscode-maven"
+    ],
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+    ],
+    "workspaceFolder": "/workspace",
+    "postCreateCommand": "mvn clean package",
+    "overrideCommand": true,
+    "shutdownAction": "stopCompose"
+}
