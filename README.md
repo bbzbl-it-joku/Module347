@@ -2,73 +2,70 @@
 
 [![Open in VS Code](https://img.shields.io/badge/Open%20in-VS%20Code-blue?logo=visual-studio-code)](https://vscode.dev/redirect?url=vscode://vscode.git/clone?url=https://github.com/bbzbl-it-joku/Module347.git)
 
-
 ## Table of Contents
 
-//TODO - Add table of contents
+- [Module347](#module347)
+  - [Table of Contents](#table-of-contents)
+  - [Contributors](#contributors)
+  - [Requirements](#requirements)
+  - [Setup](#setup)
+  - [Contribution](#contribution)
+  - [License](#license)
 
 ## Contributors
 
 | Name | GitHub Account | Role |
-|-----|-----|-----|
-| Joshua Kunz | [@jokudev](https://github.com/jokudev) | __Project Lead & Main Dev__ |
+|------|----------------|------|
+| Joshua Kunz | [@jokudev](https://github.com/jokudev) | Project Lead & Main Dev |
 
 ## Requirements
 
-As this Project has a Devcontainer, most requirements will be handled in the Container.
+As this project uses a devcontainer, most requirements will be handled within the container.
 
-But to run this container, your development machine needs to have following requirements installed:
+To run this container, your development machine needs the following installed:
 
-- [ ] [Docker](https://docs.docker.com/get-docker/)
-- [ ] [Git](https://git-scm.com)
-- [ ] [VS Code](https://code.visualstudio.com)
-- [ ] [VS Code Devcontainer Extention](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+- [Docker](https://docs.docker.com/get-docker/)
+- [Git](https://git-scm.com)
+- [VS Code](https://code.visualstudio.com)
+- [VS Code Devcontainer Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 ## Setup
 
-Before we start make sure you have the [Requirements](#requirements) installed.
+0. Before we start, make sure you have the [requirements](#requirements) installed.
 
-After that you can click the **Open in VS Code** Button at the top of the page.
+1. Click the __Open in VS Code__ button at the top of the page.
 
+2. VS Code should open locally on your computer.
 
+3. Clone the repository locally onto your computer.
 
+4. Install the Remote Development extension.
 
-Now you should have a local copy of the project
+5. To launch it as a devcontainer, click the blue button in the bottom left corner and navigate to "Reopen in Container."
 
-If it prompts you to trust the project and its authors please accept it.
+6. The launch of the container may take up to 60-80 seconds, depending on the Maven dependencies.
 
-Now you need to instll the Remote Developement extension
+7. Once the launch of the container is complete, copy the `.env.sample` file to `.env` and update the variables.
 
-To launch it as a devcontainer you just need to click the blue Button in the bottom left corner again and navigate to "Reopen in Container"
+8. Go to the "Run and Debug" panel on the left side or press ___F5___.
 
-Now it will take some time to launch. 
+9. Open [http://localhost:9090](http://localhost:9090) to access the Swagger UI.
 
-In the meanwhile you can look around the code and you will find the contents of the Project.
+## Contribution
 
-In short it contains a Mysql Database with the options to alter the Data with Phpmyadmin or with the ipynb (Jupyter Notebook). 
+We welcome contributions to the project! Here's how you can get involved:
 
-As soon as your devcontainer has completly started you can either go on phpmyadmin with localhot:8080 or use the ipynb to alter the Data.
+- __Fork the repository:__ Start by forking the repository to your GitHub account.
+- __Create a new branch:__ Create a new branch for your changes and make sure to follow a naming convention such as `feature/your-feature` or `bugfix/your-bug`.
+- __Make your changes:__ Implement your changes and write tests if necessary.
+- __Commit and push:__ Commit your changes with descriptive commit messages and push your branch to GitHub.
+- __Open a pull request:__ Once your changes are ready, open a pull request for review. Describe your changes and any potential issues.
+- __Code reviews:__ Participate in code reviews and provide constructive feedback to other contributors.
 
-If you chose the phpmyadmin route the username and password are "root"
+We follow a code of conduct to ensure a welcoming and inclusive environment for everyone. Please adhere to it when contributing.
 
-If you instead use the Jupyter Notebook, you have to do one extra step. 
-If you press "Run" next to the first code cell it will prompt you with an install request. You can click install and after that it should work.
-If it doesnt work make sure you have a python kernel selected and have run the first cell before any other cells. 
+## License
 
-# *Debug*
+This project is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). You are free to use, modify, and distribute this project, provided that any distributed versions or derivatives are also licensed under the GPLv3.
 
-To debug the Jupyter Notebook code hover over the arrow next to the cell you want to debug. Click on the more arrow (looks like a v ) and click "Debug cell" otherwise you an click crtl + shift + alt + enter whilst in the cell you want to debug. You can see in which cell you are by the blue outline of the cell.
-
-# *Connections*
-
-*Jupyter notebook*
-Selcet a Kernel at the top right. Go to Python enviroments and select the recomended one. 
-Afterwards run the first cell. It will prompt you to install the jpynb kernel for the selected kernel. Click install. 
-Now it will run the cells without problems.
-
-*Mysql Container Shell*
-Navigate to your Docker Desktop Applikation. Now find the mysql Container and navigate to the exec tab. Type "mysql -u root -p" and enter the password "root".
-
-*PHP myadmin*
-Connecto to "localhost:8080" with the password and username being "root"
-
+For more details about the license, please refer to the [local license file](LICENSE).
