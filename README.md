@@ -1,6 +1,7 @@
 # Module347
 
-[![Open in VS Code](https://img.shields.io/badge/Open%20in-VS%20Code-blue?logo=visual-studio-code)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/bbzbl-it-joku/Module347.git)
+[![Open in VS Code](https://img.shields.io/badge/Open%20in-VS%20Code-blue?logo=visual-studio-code)](https://vscode.dev/redirect?url=vscode://vscode.git/clone?url=https://github.com/bbzbl-it-joku/Module347.git)
+
 
 ## Table of Contents
 
